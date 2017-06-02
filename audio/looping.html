@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Natural Live Looping: Sé Sneaky</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script language="javascript" type="text/javascript" src="../ref/p5.js"></script>
+    <script language="javascript" src="../ref/addons/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="../ref/sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="../ref/sketch2.js"></script>
+    <script language="javascript" type="text/javascript" src="../ref/modernizr.custom.53670.js"></script>
+    <script language="javascript" type="text/javascript" src="../ref/scripts.js"></script>
+    <script language="javascript" type="text/javascript" src="../ref/projectPageScripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="../ref/style.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="p5root" data-location="../index.html"></div>
+      <div id="logoType">
+        <h1>
+          Sé Sneaky
+        </h1>
+        <div>
+          Artist/developer
+        </div>
+      </div>
+      <div id="sharingTop">
+        <a href="https://twitter.com/sesneaky"><img src="../images/Twitter.png" /></a>
+        <a href="https://vimeo.com/sesneaky"><img src="../images/Vimeo.png" /></a>
+          <a href="https://github.com/sesneaky"><img src="../images/Github.png" /></a>
+      </div>
+    </div>
+    <div id="menu">
+      <div class="menuItem">
+        <a href="../3d/">3D</a>
+      </div>
+      <div class="menuItem">
+        <a href="../web/">Web</a>
+      </div>
+      <div class="menuItem">
+        <a href="../audio/">Audio</a>
+      </div>
+      <div class="menuItem">
+        <a href="../installations/">Installations</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="projectText">
+        <h2 class="projectTitle">Natural Live Looping</h2>
+        <div class="projectDesc">
+          <p>A commonly used modern tool for adding texture to live instrumental music is the looper. This is a hardware or software device that enables a band member to record a section of her live performance and play it back in real time, allowing yet more music to be played on top. In its purest form infinite layering is possible. The biggest challenge with using a looper is that the band must keep in time with the looped material. This can be difficult to achieve if insufficient monitoring is available to the band and if the recorded material is lacking in short notes; plus the loop takes the role of time keeper away from the drummer, thus possibly depriving the music of a natural, human groove.</p>
+	  <div class="projectImages">
+	    <div class="projectImageLeft">
+              <img src="../images/Looping01.png" />
+              <div class="caption">Pure Data patch</div>
+	    </div>
+	    <div class="projectImageRight">
+              <img src="../images/Looping02.jpg" />
+              <div class="caption">Building the footswitch</div>
+	    </div>
+	    <div class="projectImageLeft">
+              <img src="../images/Looping03.jpg" />
+              <div class="caption">Footswitch complete</div>
+	    </div>
+	    <div class="projectImageRight">
+              <img src="../images/Looping04.png" />
+              <div class="caption">Piezo sensors in development</div>
+	    </div>
+	  </div>
+          <p>This project addresses such challenges by turning the timing relationship around. Instead of the band following the looper, the looper follows the drummer. We use custom drum triggers and a drum &quot;brain&quot; to turn the drum performance into midi notes. Our Pure Data patch passes these notes to a tempo-tracking application. This constantly feeds the BPM of the drummer's performance throughout the looping session into audio software (in this case Ableton Live) which handles the looping itself. That is, we input the audio of one of the instruments of the band into Ableton Live and instruct it to record and playback the audio material. The different operations (record, play, stop) can be triggered either with a custom-built foot controller or a single drum pad. In the case of the single drum pad our Pure Data patch maintains the state of the operations sequence. Overall the patch coordinates all midi input, the tempo tracking software and the audio recording software.</p>
+	  <p>
+            <b>Made for:</b> <a href="http://www.arlequino.band">ARLEQUINO</a>
+          </p>
+          <p>
+            <b>My role:</b> technical direction, development, electronics
+          </p>
+          <tags>
+            <ul>
+              <li data-short="Pd">Pure Data</li>
+              <li data-short="electronics">Electronics</li>
+            </ul>
+          </tags>
+	  <div id="tailNav">
+            <div class="prevProject">
+              <a href="audioEffects.html">← Audio Effects</a>
+	    </div>
+            <div class="nextProject">
+              <a href="../installations/inAlveo.html">In Alveo →</a>
+            </div>
+          </div>
+        </div>
+	<div id="contact">
+          <div id="p5root2"></div>
+          <div id="sharingBottom">
+            <a href="https://twitter.com/sesneaky"><img src="../images/Twitter.png" /></a>
+            <a href="https://vimeo.com/sesneaky"><img src="../images/Vimeo.png" /></a>
+          <a href="https://github.com/sesneaky"><img src="../images/Github.png" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
